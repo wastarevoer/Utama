@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@anamnich 
-anamnich
-/
-Utama
-Public
-forked from Angelillo15/MinecraftPurpleTheme
-Fork your own copy of anamnich/Utama
-Code
-Pull requests
-Actions
-Projects
-Security
-Insights
-Beta Try the new code view
-Utama/install.sh
-@anamnich
-anamnich Update install.sh
-Latest commit 88566e3 on Jan 12
- History
- 2 contributors
-@Angelillo15@anamnich
-90 lines (77 sloc)  1.85 KB
-
 #!/bin/bash
 
 if (( $EUID != 0 )); then
