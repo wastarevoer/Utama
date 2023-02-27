@@ -1,3 +1,34 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@anamnich 
+anamnich
+/
+Utama
+Public
+forked from Angelillo15/MinecraftPurpleTheme
+Fork your own copy of anamnich/Utama
+Code
+Pull requests
+Actions
+Projects
+Security
+Insights
+Beta Try the new code view
+Utama/install.sh
+@anamnich
+anamnich Update install.sh
+Latest commit 88566e3 on Jan 12
+ History
+ 2 contributors
+@Angelillo15@anamnich
+90 lines (77 sloc)  1.85 KB
+
 #!/bin/bash
 
 if (( $EUID != 0 )); then
@@ -29,7 +60,7 @@ installTheme(){
     yarn
 
     cd /var/www/pterodactyl
-    yarn run watch
+    yarn build:production
     sudo php artisan optimize:clear
 
 
@@ -57,19 +88,19 @@ restoreBackUp(){
     rm Utamabackup.tar.gz
 
     cd /var/www/pterodactyl
-    yarn run watch
+    yarn build:production
     sudo php artisan optimize:clear
 }
-echo "SCRIPT BY RIYAN SIPAYUNG"
+echo "ZassXd Official"
 echo "AUTO INSTALL THEME"
 echo ""
-echo "Tutor? Wa: 089637959432"
-echo "Nama: RiyanSipayung"
+echo "Wa: +62 821-2614-8789"
+echo "Nama: ZassXd"
 echo ""
-echo "[1] Install theme"
-echo "[2] Restore backup"
-echo "[3] Repair panel (use if you have an error in the theme installation)"
-echo "[4] Exit"
+echo "[1] Tema ini mex"
+echo "[2] Backup pler"
+echo "[3] Repair pler"
+echo "[4] Keluar Bego"
 
 read -p "Please enter a number: " choice
 if [ $choice == "1" ]
@@ -88,3 +119,18 @@ if [ $choice == "4" ]
     then
     exit
 fi
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Utama/install.sh at main · anamnich/Utama
